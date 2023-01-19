@@ -1,0 +1,385 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 975386000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "steps.LoginStep.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-19T20:50:52.143Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3587091800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStep.beforeRun()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4507800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.NewAccountStep.bankAndCash()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User should be able to login with valid credentials",
+        "description": "    and open a new account",
+        "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 284685200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.NewAccountStep.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2157551600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters the \"demo@techfios.com\" in the \"username\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@techfios.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "steps.LoginStep.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2094828600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters the \"abc123\" in the \"password\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.LoginStep.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1827106000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on \"login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStep.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37265100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "steps.LoginStep.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316712900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks on \"bankCash\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankCash\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStep.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605383700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on \"newAccount\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"newAccount\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStep.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124629800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters \"Saving Account\" in the \"accountTitle\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Saving Account\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"accountTitle\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144657100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters \"TechFios Saving Account\" in the \"description\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TechFios Saving Account\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"description\"",
+                  "offset": 45
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126082900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters \"3000\" in the \"initialBalance\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3000\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"initialBalance\"",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122788700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters \"123456789\" in the \"accountNumber\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456789\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"accountNumber\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132803400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters \"\u003ccontactPerson\u003e\" in the \"contactPerson\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ccontactPerson\u003e\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"contactPerson\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93159000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters \"5102345689\" in the \"Phone\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5102345689\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Phone\"",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167118300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters \"https://www.bankofamerica.com\" in the \"internetBankingURL\" field in accounts page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.bankofamerica.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"internetBankingURL\"",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.NewAccountStep.user_enters_in_the_field_in_accounts_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1988524200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks on \"submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStep.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cA[ccount Created Successfully. Error: Invalid URL. URL Not Updated.]\u003e but was:\u003cA[dd Customer Import Export\n# Image Name Company Name Email Phone Manage\n3818 seleniumone114 Motorola 82abc1@gmail.com 45678960\n3817 Excel Project215 Techfios 598abc123@gmail.com o023456231\n3816 Excel Project600 Techfios 203abc123@gmail.com o023456993\n3815 Excel Project469 Techfios 81abc123@gmail.com o023456569\n3814 Excel Project974 Techfios 508abc123@gmail.com o023456395\n3813 Excel Project780 Techfios 996abc123@gmail.com o023456928\n3812 Excel Project444 Techfios 528abc123@gmail.com o023456181\n3811 Excel Project347 Techfios 681abc123@gmail.com o023456315\n3810 Excel Project394 Techfios 990abc123@gmail.com o023456738\n3809 Excel Project388 Techfios 821abc123@gmail.com\n3808 Excel Project194 Techfios 377abc123@gmail.com\n3807 Excel Project840 Techfios 952abc123@gmail.com\n3806 Excel Project104 Techfios 862abc123@gmail.com\n3805 Excel Project93 Techfios 5abc123@gmail.com\n3804 Excel Project968 Techfios 163abc123@gmail.com\n3803 Selenium816 Techfios 57abc@tecfios.com a123456102\n3802 Selenium551 Techfios 795abc@tecfios.com a123456459\n3801 Selenium943 Techfios 389abc@tecfios.com a123456492\n3798 Excel Projet619 Techfios 929msexcell@gmail.com a2315461076\n3797 Excel Projet848 Techfios 743msexcell@gmail.com a2315468163\n3796 Excel Projet690 Techfios 321msexcell@gmail.com a2315463415\n3790 xml Project121583801 Techfios 23456785-1267153631\n3789 xml Project-104335111 Techfios 23456785-282233153\n3788 xml Project335988158 Techfios 23456785753500882\n3787 xml Project1160563220 Techfios 23456785-2014617183\n3786 xml Project475521983 Techfios 23456785919677927\n3785 xml Project183081193 Techfios 234567851359633988\n3784 xml Project-729546289 Techfios 23456785-1603178905\n3783 xml Project1225710942 Techfios 23456785427503811\n3782 xml Project-1860778974 Techfios 234567851517188012\n3781 xml Project-313323237 Techfios 234567851123686614\n3780 xml Project1156202724 Techfios 23456785-1926711568\n3779 Microsoft Excel-1585782492 Techfios a1234555555556-1026315114\n3778 Microsoft Excel452561212 Techfios a1234555555556-807893146\n3777 Microsoft Excel-1322838855 Techfios a1234555555556-1978236986\n3776 Microsoft Excel-1454083580 Techfios msexcel@gmail.com a1234555555556637661130\n3775 Microsoft Excel532100533 Techfios a12345555555561645228898\n3774 Microsoft Excel-905569089 Techfios 629694074msexcel@gmail.com a1234555555556-1514875771\n3773 aaaaa Motorola 222demo@techfios.com 11111\n3772 Microsoft Excel-1717454625 Techfios 394563637msexcel@gmail.com a1234555555556-1034605123\n3771 Microsoft Excel40874067 Techfios 255285773msexcel@gmail.com a1234555555556602891744\n3770 December Selenium245 Techfios 1088abc@techfios.com 0123456636\n3765 Excel Projet44 Techfios 65msexcell@gmail.com a231546715\n3764 seleniumone496 Motorola 22abc1@gmail.com 45678219\n3763 Excel Projet274 Techfios 73msexcell@gmail.com a2315465999\n3762 Excel Projet692 Techfios 22msexcell@gmail.com a2315464422\n3761 Excel Projet843 Techfios 18msexcell@gmail.com a2315469863\n3760 Excel Projet344 Techfios 724msexcell@gmail.com a231546459\n3759 Excel Projet903 Techfios 660msexcell@gmail.com a2315464388\n3758 Excel Projet136 Techfios 836msexcell@gmail.com a2315462603\n«\n‹\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n›\n»]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat steps.NewAccountStep.user_should_be_able_to_validate_account_created_successfully(NewAccountStep.java:70)\r\n\tat ✽.User should be able to validate account created successfully(classpath:features/NewAccount.feature:24)\r\n",
+              "duration": 987284500,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "User should be able to validate account created successfully",
+            "match": {
+              "location": "steps.NewAccountStep.user_should_be_able_to_validate_account_created_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios bank and cash New Account Functionality",
+    "description": "",
+    "id": "techfios-bank-and-cash-new-account-functionality",
+    "keyword": "Feature",
+    "uri": "classpath:features/NewAccount.feature",
+    "tags": [
+      {
+        "name": "@NewAccount",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
